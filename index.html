@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Agro Store Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Tela de Login -->
+    <div id="login-screen" class="card">
+      <div class="header">
+        <div class="curve"></div>
+        <span class="arrow">←</span>
+      </div>
+      <div class="form">
+        <h2>Login</h2>
+        <input type="text" placeholder="NOME" />
+        <input type="email" placeholder="EMAIL" />
+        <input type="text" placeholder="ENDEREÇO" />
+        <input type="password" placeholder="SENHA" />
+        <!-- Aqui está o botão que chama a função correta -->
+        <button onclick="showAgroStore()">Sign Up</button>
+      </div>
+    </div>
+
+    <!-- Tela Agro Store (invisível no começo) -->
+    <div id="agro-screen" style="display: none;">
+      <h1 style="background-color: green; color: white; padding: 10px;">AGRO <span style="font-weight: normal;">STORE</span></h1>
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 20px;">
+        <div>
+          <img src="https://cdn-icons-png.flaticon.com/512/590/590685.png" alt="Morango" width="100" />
+          <button onclick="verMais('morango')">VER MAIS</button>
+        </div>
+        <div>
+          <img src="https://cdn-icons-png.flaticon.com/512/590/590681.png" alt="Limão" width="100" />
+          <button onclick="verMais('limao')">VER MAIS</button>
+        </div>
+        <div>
+          <img src="https://cdn-icons-png.flaticon.com/512/590/590683.png" alt="Melancia" width="100" />
+          <button onclick="verMais('melancia')">VER MAIS</button>
+        </div>
+        <div>
+          <img src="https://cdn-icons-png.flaticon.com/512/590/590682.png" alt="Banana" width="100" />
+          <button onclick="verMais('banana')">VER MAIS</button>
+        </div>
+        </div>
+      </div>
+      
+<!-- Tela de Detalhes do Produto (morango) -->
+<div id="produto-morango" style="display: none; padding: 20px; text-align: center;">
+  <h2>Morango Fresco</h2>
+  <img src="https://cdn-icons-png.flaticon.com/512/590/590685.png" width="150" />
+  <p style="font-size: 18px;">Preço: R$ 2,50</p>
+  <button onclick="comprarProduto('morango')">Comprar</button>
+  <button onclick="voltarParaLoja()">Voltar</button>
+</div>
+    <!-- Tela de Detalhes do Produto (limao) -->
+<div id="produto-limao" style="display: none; padding: 20px; text-align: center;">
+  <h2>Limão Tahiti</h2>
+  <img src="https://cdn-icons-png.flaticon.com/512/590/590681.png" width="150" />
+  <p style="font-size: 18px;">Preço: R$ 3,20</p>
+  <button onclick="comprarProduto('limao')">Comprar</button>
+  <button onclick="voltarParaLoja()">Voltar</button>
+</div>
+
+<!-- Melancia -->
+<div id="produto-melancia" style="display: none; padding: 20px; text-align: center;">
+  <h2>Melancia organica</h2>
+  <img src="https://cdn-icons-png.flaticon.com/512/590/590683.png" width="150" />
+  <p style="font-size: 18px;">Preço: R$ 4,00</p>
+  <button onclick="comprarProduto('melancia')">Comprar</button>
+  <button onclick="voltarParaLoja()">Voltar</button>
+</div>
+
+<!--  Banana -->
+<div id="produto-banana" style="display: none; padding: 20px; text-align: center;">
+  <h2>Banana Nanica</h2>
+  <img src="https://cdn-icons-png.flaticon.com/512/590/590682.png" width="150" />
+  <p style="font-size: 18px;">Preço: R$ 5,00</p>
+  <button onclick="comprarProduto('banana')">Comprar</button>
+  <button onclick="voltarParaLoja()">Voltar</button>
+</div>
+    
+      </div>
+
+    <script src="sketch.js"></script>
+  </body>
+</html>

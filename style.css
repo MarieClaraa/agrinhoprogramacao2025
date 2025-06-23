@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.header {
+  background-color: #36c048;
+  height: 100px;
+  position: relative;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.arrow {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.form {
+  padding: 20px;
+}
+
+.form h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.form input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+.form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1e2c3d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.curve {
+  position: absolute;
+  right: -40px;
+  top: 0;
+  width: 80px;
+  height: 80px;
+  background-color: #36c048;
+  border-bottom-left-radius: 80px;
+}
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+
+}
+
+.produtos div {
+  background: #f3f3f3;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.produtos img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.produtos button {
+  margin-top: 10px;
+  padding: 8px;
+  background: #1e2c3d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
